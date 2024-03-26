@@ -47,3 +47,28 @@
   .btn-outline-light {
   margin-left: 10px; 
 }
+/* Media Queries for Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block; 
+  }
+  
+  .navbar-collapse {
+    display: none; 
+  }
+  
+  .navbar-collapse.show {
+    display: block; 
+  }
+
+  .navbar-nav .nav-item {
+    text-align: center; 
+    margin-bottom: 10px; 
+  }
+
+  .btn-outline-light {
+    margin-left: 0; 
+    margin-top: 10px;
+    width: 100%; 
+  }
+}
