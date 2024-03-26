@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 
 import './FeedbackChat.css'; 
 
-const socket = io('http://localhost:5000');
+const socket = io('https://portal-five-beta.vercel.app/');
 
 const FeedbackChat = () => {
   const [feedbacks, setFeedbacks] = useState([]);
@@ -54,7 +54,7 @@ useEffect(() => {
       }
 
       try {
-        const response = await axios.get(`http://localhost:5000/api/feedback/${userId}`, {
+        const response = await axios.get(`https://portal-five-beta.vercel.app/api/feedback/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -104,7 +104,7 @@ useEffect(() => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/feedback/submit', { message: feedback }, {
+      const response = await axios.post('https://portal-five-beta.vercel.app/api/feedback/submit', { message: feedback }, {
         headers: {
           Authorization: `Bearer ${token}`
         }
