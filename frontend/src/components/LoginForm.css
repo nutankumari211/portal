@@ -54,4 +54,8 @@ input:hover{
     color: #d32f2f;
     margin-top: 1rem;
   }
-  
+  @media (max-width: 1008px) {
+  .container {
+    max-width: 95%;
+  }
+}
