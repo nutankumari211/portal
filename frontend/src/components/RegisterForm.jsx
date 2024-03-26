@@ -17,7 +17,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const response = await axios.post('https://portal-five-beta.vercel.app/api/auth/register', formData);
       if (response.data.message === 'User registered successfully') {
         navigate('/login');
       }
