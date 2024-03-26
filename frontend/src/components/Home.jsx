@@ -24,8 +24,7 @@ const Home = () => {
           Not registered yet? No worries! Click on the <strong className="text-info">Register</strong> button to create an account and start sharing your feedback today.
         </p>
         <button className="btn btn-lg btn-primary shadow-sm">Get Started</button>
-        <button className="btn btn-lg btn-primary shadow-sm mb-4">Register</button>
-        <button className="btn btn-lg btn-primary shadow-sm mb-4">Login</button>
+       
       </div>
 
      
